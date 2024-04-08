@@ -23,7 +23,9 @@ class MainApp extends StatelessWidget {
           backgroundColor: const Color(0xFF009688),
           title: const Text(
             'Rufus',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
         body: const Home(),

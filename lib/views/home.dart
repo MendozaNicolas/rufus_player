@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rufus_player/widgets/download_dialog.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Home extends StatefulWidget {
@@ -97,7 +98,12 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          // This function will be executed on button tap
+                          showDialog(
+                              context: context,
+                              builder: (context) => const DownloadDialog());
+                        },
                         icon: Icon(
                           Icons.download,
                           color: Theme.of(context).colorScheme.primary,
